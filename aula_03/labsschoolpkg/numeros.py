@@ -31,8 +31,8 @@ def dobro(moeda, show=False):
         return moeda
 
 
-def aumentar(moeda, desconto=10, show=False):
-    moeda += (moeda * desconto) / 100
+def aumentar(moeda, acrescimo=10, show=False):
+    moeda += (moeda * acrescimo) / 100
     if show:
         return f'R${moeda:.2f}'.replace('.', ',')
     else:
@@ -58,7 +58,7 @@ def resumo(moeda, aumento=80, redução=35):
     print(f'{"Metade do preço:":<21}', end='')
     print(metade(moeda, show=True))
     print(f'{aumento}{"% de aumento:":<19}', end='')
-    print(aumentar(moeda, desconto=aumento, show=True))
+    print(aumentar(moeda, acrescimo=aumento, show=True))
     print(f'{redução}{"% de redução:":<19}', end='')
     print(diminuir(moeda, desconto=redução, show=True))
     print('-' * 30)

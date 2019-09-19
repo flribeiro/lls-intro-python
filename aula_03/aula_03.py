@@ -1,4 +1,5 @@
-from labsschoolpkg import numeros
+from labsschoolpkg import *
 
-preço = numeros.leiaDinheiro('Digite o preço: R$')
-numeros.resumo(preço, 35, 22)
+if __name__ == "__main__":
+    preço = numeros.leiaDinheiro('Digite o preço: R$')
+    numeros.resumo(preço, 35, 22)
