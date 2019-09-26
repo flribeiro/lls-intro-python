@@ -4,8 +4,8 @@ class FilaDePrioridade:
 
 
     def __init__(self):
-        # A fila será uma lista vazia, para ser incrementada posteriormente com
-        # valores
+        # A fila será uma lista vazia, para ser incrementada posteriormente
+        # com valores
         self.fila = []
         # O índice será a posição que ocupará na lista
         self.índice = 0
