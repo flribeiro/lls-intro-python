@@ -25,18 +25,22 @@ class FilaDePrioridade:
 
 
 class Item:
+    """Explicando o que essa classe faz, qual é o seu propósito"""
 
 
     def __init__(self, nome):
+        """ Método construtor da classe Item."""
         self.nome = nome
 
 
     def __repr__(self):
+        """Retorna a representação do obj."""
         return self.nome
 
 
 # Instância (pegar a classe e criar um objeto a partir dela) da classe FilaDePrioridade
 fila = FilaDePrioridade()
+fila2 = FilaDePrioridade()
 # Analogia: Fila de transplante, os mais velhos tem mais preferência
 # Fazemos a chamada do método
 fila.inserir(Item('Marcos'), 28)
