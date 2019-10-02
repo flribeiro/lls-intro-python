@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Plantonistas da semana</title>
+    </head>
+    <body>
+
+        <h1>Magazine Luiza</h1>
+
+        <br><br>
+
+        <h2>Abaixo os plantonistas</h2>
+        <br><br>
+        <ol>
+            {% for plantonista in plantonistas %}
+                <li><a href="{% url 'core:detalhes' plantonista.id %}">{{plantonista.nome}}</a></li>
+            {% endfor %}
+        </ol>
+
+        <h2>Abaixo as áreas</h2>
+        <br><br>
+        <ol>
+            {% for area in areas %}
+                <li>{{area.nome}}</li>
+            {% endfor %}
+        </ol>
+
+        <br><br><br><br><br>
+
+        <a href="{% url 'core:criar' %}">Cadastre um plantonista</a>
+    </body>
+</html>

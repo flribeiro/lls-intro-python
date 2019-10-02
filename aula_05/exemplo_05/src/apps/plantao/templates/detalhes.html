@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{coluna.nome}}</title>
+    </head>
+    <body>
+        <h1>Página detalhada do plantonista: {{coluna.nome}}</h1>
+
+        <b>Área pertencente</b>
+        {{coluna.área}}
+
+        <br><br>
+
+        <b>Nome do jovem</b>
+        {{coluna.nome}}
+
+        <br><br>
+
+        <b>Telefone</b>
+        {{coluna.telefone}}
+
+        <br><br>
+
+        <b>Observação</b>
+        {{coluna.observação}}
+
+        <br><br>
+
+        <a href="{% url 'core:listar' %}">Voltar</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'core:alterar' coluna.id %}">Bora editar?</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'core:deletar' coluna.id %}">Are you gonna drop?</a>
+
+
+    </body>
+</html>
