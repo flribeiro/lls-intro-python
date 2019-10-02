@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ coluna.nome }}</title>
+    </head>
+    <body>
+        <h1>Bora alterar, vai curtir seu descanso {{coluna.nome}}</h1>
+        <br>
+        <br>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="button">Salvar</button>
+        </form>
+
+        <a href="{% url 'core:listar' %}">Voltar</a>
+        <a href="{% url 'core:deletar' coluna.id %}">Deletar</a>
+
+    </body>
+</html>

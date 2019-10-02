@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastre aqui</title>
+    </head>
+    <body>
+        <form method="POST">
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" name="button">Salvar</button>
+
+        </form>
+    </body>
+</html>
